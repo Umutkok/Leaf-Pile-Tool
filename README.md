@@ -1,20 +1,26 @@
 # Leaf Pile
+Inspired by the leaf piles in Death’s Door, I created a small interactive leaf pile system. When the player interacts with the pile, leaves scatter and fall around the environment.
 
+To keep performance efficient, I used object pooling for the falling and scattered leaves so that objects are reused instead of constantly instantiated and destroyed. The leaves inside the pile are also combined into a single texture atlas, which helps reduce the number of draw calls and improves batching.
+
+Additionally, I used Unity’s Particle System to add smaller flying leaves and subtle motion, making the pile feel more dynamic and alive.
 
 
 ### Here is final results
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/29c3f472-bf15-4969-868c-3e0108c2b612" alt="GIF" />
+  <img src="https://github.com/user-attachments/assets/d14e2acf-6512-4500-81de-7e61a61abee5" alt="GIF" />
 </p>
 
-### I also did 
+### Performance
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/9c6b2b80-f872-49b7-bb1d-38fe6a805b22" alt="GIF" /><br />
-  <small>Hump Function</small>
+  <img src="https://github.com/user-attachments/assets/099487be-0647-491e-8c88-bd416312996f" alt="GIF" /><br />
+  <small>Pile</small>
 </p>
 
+### Inspiration
+
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/50627d72-4de6-4aa8-ba1c-e4d37aa1a7ec" alt="GIF" /><br />
-  <small>Long Wave Function</small>
+  <img src="https://github.com/user-attachments/assets/cf92945f-43dd-4dbf-930d-e83785de0cde" alt="GIF" /><br />
+  <small>pPile</small>
 </p>
